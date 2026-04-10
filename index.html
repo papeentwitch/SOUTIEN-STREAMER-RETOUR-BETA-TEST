@@ -281,25 +281,25 @@
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="nom">Nom ou pseudo</label>
-            <input type="text" id="nom" name="Nom ou pseudo" placeholder="Ex : Testeur42" required>
+            <label for="ss-nom">Nom ou pseudo</label>
+            <input type="text" id="ss-nom" name="Nom ou pseudo" placeholder="Ex : Testeur42" required>
           </div>
 
           <div class="form-group">
-            <label for="github">Profil GitHub</label>
-            <input type="text" id="github" name="Profil GitHub" placeholder="Ex : github.com/tonprofil" required>
+            <label for="ss-github">Profil GitHub</label>
+            <input type="text" id="ss-github" name="Profil GitHub" placeholder="Ex : github.com/tonprofil" required>
           </div>
         </div>
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="email">Adresse mail</label>
-            <input type="email" id="email" name="Adresse mail" placeholder="Ex : email@exemple.com" required>
+            <label for="ss-email">Adresse mail</label>
+            <input type="email" id="ss-email" name="Adresse mail" placeholder="Ex : email@exemple.com" required>
           </div>
 
           <div class="form-group">
-            <label for="version">Version testée</label>
-            <input type="text" id="version" name="Version testée" placeholder="Ex : bêta v1.0">
+            <label for="ss-version">Version testée</label>
+            <input type="text" id="ss-version" name="Version testée" placeholder="Ex : bêta v1.0">
           </div>
         </div>
 
@@ -307,8 +307,8 @@
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="type-pc">Type d’ordinateur</label>
-            <select id="type-pc" name="Type d’ordinateur" required>
+            <label for="ss-type-pc">Type d’ordinateur</label>
+            <select id="ss-type-pc" name="Type d’ordinateur" required>
               <option value="">Choisir</option>
               <option value="PC fixe">PC fixe</option>
               <option value="PC portable">PC portable</option>
@@ -316,20 +316,20 @@
           </div>
 
           <div class="form-group">
-            <label for="ram">Mémoire RAM</label>
-            <input type="text" id="ram" name="RAM" placeholder="Ex : 16 Go" required>
+            <label for="ss-ram">Mémoire RAM</label>
+            <input type="text" id="ss-ram" name="RAM" placeholder="Ex : 16 Go" required>
           </div>
         </div>
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="cpu">Processeur</label>
-            <input type="text" id="cpu" name="Processeur" placeholder="Ex : Ryzen 7 5800X / Intel i5-13600">
+            <label for="ss-cpu">Processeur</label>
+            <input type="text" id="ss-cpu" name="Processeur" placeholder="Ex : Ryzen 7 5800X / Intel i5-13600">
           </div>
 
           <div class="form-group">
-            <label for="gpu">Carte graphique</label>
-            <input type="text" id="gpu" name="Carte graphique" placeholder="Ex : RTX 3070 / Radeon / Intel Iris Xe">
+            <label for="ss-gpu">Carte graphique</label>
+            <input type="text" id="ss-gpu" name="Carte graphique" placeholder="Ex : RTX 3070 / Radeon / Intel Iris Xe">
           </div>
         </div>
 
@@ -364,8 +364,8 @@
         </div>
 
         <div class="form-group">
-          <label for="note">Note globale sur 10</label>
-          <select id="note" name="Note globale sur 10" required>
+          <label for="ss-note">Note globale sur 10</label>
+          <select id="ss-note" name="Note globale sur 10" required>
             <option value="">Choisir une note</option>
             <option value="10">10</option>
             <option value="9">9</option>
@@ -381,23 +381,61 @@
         </div>
 
         <div class="form-group">
-          <label for="points-forts">Ce que tu as aimé</label>
-          <textarea id="points-forts" name="Ce que tu as aimé" placeholder="Qu’est-ce qui fonctionne bien selon toi ?"></textarea>
+          <label for="ss-points-forts">Ce que tu as aimé</label>
+          <textarea id="ss-points-forts" name="Ce que tu as aimé" placeholder="Qu’est-ce qui fonctionne bien selon toi ?"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="difficultes">Difficultés ou points bloquants</label>
-          <textarea id="difficultes" name="Difficultés ou points bloquants" placeholder="Décris ce qui t’a gêné ou posé problème"></textarea>
+          <label for="ss-difficultes">Difficultés ou points bloquants</label>
+          <textarea id="ss-difficultes" name="Difficultés ou points bloquants" placeholder="Décris ce qui t’a gêné ou posé problème"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="idee">Idées d’amélioration</label>
-          <textarea id="idee" name="Idées d’amélioration" placeholder="Qu’aimerais-tu voir ajouté ou amélioré ?"></textarea>
+          <label for="ss-idee">Idées d’amélioration</label>
+          <textarea id="ss-idee" name="Idées d’amélioration" placeholder="Qu’aimerais-tu voir ajouté ou amélioré ?"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="commentaire">Commentaire libre</label>
-          <textarea id="commentaire" name="Commentaire libre" placeholder="Tout autre retour utile"></textarea>
+          <label for="ss-commentaire">Commentaire libre</label>
+          <textarea id="ss-commentaire" name="Commentaire libre" placeholder="Tout autre retour utile"></textarea>
+        </div>
+
+        <h2 class="section-title">Avis commercial</h2>
+
+        <div class="form-group">
+          <label>Selon toi, ce logiciel devrait-il être payant ?</label>
+          <div class="radio-group">
+            <label class="radio-card"><input type="radio" name="Le logiciel devrait-il être payant" value="Oui"> Oui</label>
+            <label class="radio-card"><input type="radio" name="Le logiciel devrait-il être payant" value="Non"> Non</label>
+            <label class="radio-card"><input type="radio" name="Le logiciel devrait-il être payant" value="Je ne sais pas"> Je ne sais pas</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Quel modèle te semblerait le plus adapté ?</label>
+          <div class="radio-group">
+            <label class="radio-card"><input type="radio" name="Modèle économique conseillé" value="Prix fixe"> Prix fixe</label>
+            <label class="radio-card"><input type="radio" name="Modèle économique conseillé" value="Abonnement mensuel"> Abonnement mensuel</label>
+            <label class="radio-card"><input type="radio" name="Modèle économique conseillé" value="Version gratuite + version premium"> Version gratuite + version premium</label>
+            <label class="radio-card"><input type="radio" name="Modèle économique conseillé" value="Aucun"> Aucun</label>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label for="ss-prix-fixe">Si prix fixe, quel prix ?</label>
+            <input type="text" id="ss-prix-fixe" name="Si prix fixe, quel prix" placeholder="Ex : 9,99€ / 15€ / 20€">
+          </div>
+
+          <div class="form-group">
+            <label for="ss-prix-abonnement">Si abonnement, quel prix par mois ?</label>
+            <input type="text" id="ss-prix-abonnement" name="Si abonnement, quel prix par mois" placeholder="Ex : 2,99€ / 4,99€ / 9,99€">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="ss-avis-prix">Pourquoi ce choix ?</label>
+          <textarea id="ss-avis-prix" name="Pourquoi ce choix de prix ou de modèle" placeholder="Explique ce qui te semblerait juste pour ce logiciel"></textarea>
         </div>
 
         <div class="actions">
